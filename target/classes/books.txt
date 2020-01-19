@@ -1,0 +1,36 @@
+The Witcher: The Last Wish|Andrzej Sapkowski|1993|288|34.99|FANTASY
+The Witcher: Sword of Destiny|Andrzej Sapkowski|1992|384|44.99|FANTASY
+The Witcher: Blood of Elves|Andrzej Sapkowski|1994|320|44.99|FANTASY
+The Witcher: Time of Contempt|Andrzej Sapkowski|1995|331|44.99|FANTASY
+The Witcher: Baptism of Fire|Andrzej Sapkowski|1996|343|44.99|FANTASY
+The Witcher: The Tower of the Swallow|Andrzej Sapkowski|1997|436|54.99|FANTASY
+The Witcher: The Lady of the Lake|Andrzej Sapkowski|1999|531|54.99|FANTASY
+The Witcher: Season of Storms|Andrzej Sapkowski|2013|384|29.99|FANTASY
+Deal Breaker|Harlan Coben|1995|213|19.99|CRIME_STORY
+Drop Shot|Harlan Coben|1996|432|29.99|CRIME_STORY
+Fade Away|Harlan Coben|1996|256|19.99|CRIME_STORY
+Back Spin|Harlan Coben|1997|217|29.99|CRIME_STORY
+One False Move|Harlan Coben|1998|462|34.99|CRIME_STORY
+The Final Detail|Harlan Coben|1999|472|34.99|CRIME_STORY
+Darkest Fear|Harlan Coben|2000|514|35.99|CRIME_STORY
+Promise Me|Harlan Coben|2006|332|38.99|CRIME_STORY
+Long Lost|Harlan Coben|2009|195|44.99|CRIME_STORY
+Live Wire|Harlan Coben|2011|358|42.99|CRIME_STORY
+Home|Harlan Coben|2016|681|56.99|CRIME_STORY
+Harry Potter and the Philosopher's Store|J.K. Rowling|1997|223|39.99|FANTASY
+Harry Potter and the The Chamber of Secrets|J.K. Rowling|1998|251|39.99|FANTASY
+Harry Potter and the The Prisoner of Azkaban|J.K. Rowling|1999|317|39.99|FANTASY
+Harry Potter and the The Goblet of Fire|J.K. Rowling|2000|636|39.99|FANTASY
+Harry Potter and the The Order of the Phoenix|J.K. Rowling|2003|766|49.99|FANTASY
+Harry Potter and the The Half-Blood Prince|J.K. Rowling|2005|607|52.99|FANTASY
+Harry Potter and the The Deathly Hallows|J.K. Rowling|2007|607|52.99|FANTASY
+A Study in Scarlet|Arthur Conan Doyle|1887|413|19.99|CRIME_STORY
+The Sign of Four|Arthur Conan Doyle|1890|265|29.99|CRIME_STORY
+The Adventures of Sherlock Holmes|Arthur Conan Doyle|1892|315|38.99|CRIME_STORY
+The Memoirs of Sherlock Holmes|Arthur Conan Doyle|1997|341|29.99|CRIME_STORY
+Franklin in the Dark|Paulette Bourgeois|1987|58|5.99|FOR_CHILDREN
+Hurry Up, Franklin|Paulette Bourgeois|1991|128|7.99|FOR_CHILDREN
+Franklin Fibs|Paulette Bourgeois|1992|73|10.99|FOR_CHILDREN
+Franklin Is Lost|Paulette Bourgeois|1993|65|11.99|FOR_CHILDREN
+Franklin Is Bossy|Paulette Bourgeois|1994|87|7.99|FOR_CHILDREN
+Franklin Plays the Game|Paulette Bourgeois|1995|42|7.99|FOR_CHILDREN
