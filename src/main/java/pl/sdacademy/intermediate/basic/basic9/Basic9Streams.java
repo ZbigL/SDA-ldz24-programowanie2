@@ -71,6 +71,6 @@ public class Basic9Streams {
                 .collect(Collectors.toList());
         System.out.println(personsFromWarsaw);
         System.out.println("Hello World");
-
+        System.out.println("Hello World");
     }
 }
