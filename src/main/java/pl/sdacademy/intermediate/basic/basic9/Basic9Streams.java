@@ -66,10 +66,11 @@ public class Basic9Streams {
 
         List<Person> personsFromWarsaw = allPersons
                 .stream()
-                .peek(person -> System.out.println(person.getName()+" "+person.getPlaceOfBirth()))
+                .peek(person -> System.out.println(person.getName() + "  " + person.getPlaceOfBirth()))
                 .filter(person -> person.getPlaceOfBirth().equals("Warszawa"))
                 .collect(Collectors.toList());
         System.out.println(personsFromWarsaw);
+        System.out.println("Hello World");
 
     }
 }
