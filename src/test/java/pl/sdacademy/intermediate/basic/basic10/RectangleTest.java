@@ -6,11 +6,16 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class RectangleTest {
+    private static final int DEFAULT_WIDTH = 3;
+    private static final int DEFAULT_HEIGTH = 4;
+    private static final int DEFAULT_AREA = 12;
+    private static final int DEFAULT_PERIMETER = 14;
+    
     private Rectangle rectangle;
 
     @Before
     public void setRectangle() {
-        this.rectangle = new Rectangle(3, 4);
+        this.rectangle = new Rectangle(DEFAULT_WIDTH, DEFAULT_HEIGTH);
     }
 
     @After
@@ -20,12 +25,12 @@ public class RectangleTest {
 
     @Test
     public void testCalculateArea() {
-        Assert.assertEquals(12, rectangle.calculateArea());
+        Assert.assertEquals(DEFAULT_AREA, rectangle.calculateArea());
     }
 
     @Test
     public void testCalculatePerimeter() {
-        Assert.assertEquals(14, rectangle.calculatePerimeter());
+        Assert.assertEquals(DEFAULT_PERIMETER, rectangle.calculatePerimeter());
     }
 
 
