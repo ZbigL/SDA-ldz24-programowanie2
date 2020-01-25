@@ -1,10 +1,10 @@
-package pl.sdacademy.intermediate.basic.basic8;
+package pl.sdacademy.intermediate.complex.complex1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 /**
  * @author Piotr Zietek
@@ -12,8 +12,8 @@ import java.util.Scanner;
 
 class BookStoreInitializer {
 
-    List<Book> initBookStore() {
-        List<Book> books = new ArrayList<>();
+    Set<Book> initBookStore() {
+        Set<Book> books = new HashSet<Book>();
         String booksFilePathFromResources = getClass().getClassLoader().getResource("books.txt").getFile();
         File booksFile = new File(booksFilePathFromResources);
         try {

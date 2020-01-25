@@ -32,7 +32,7 @@ class BookStore {
 
     List<Book> findBooksByYear(int year) {
         return books.stream()
-                .filter(book -> book.getYearPushlished() == year)
+                .filter(book -> book.getYearPublished() == year)
                 .collect(Collectors.toList());
     }
 

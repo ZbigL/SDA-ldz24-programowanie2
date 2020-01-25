@@ -15,7 +15,7 @@ public class BookStoreTest {
     private static final int NUMBER_OF_SAPKOWSKI_BOOKS = 8;
     private static final int NUMBER_OF_BOOKS_FROM_1999 = 3;
     private static final int NUMBER_OF_BOOKS_WITH_384_PAGES = 2;
-    private static final int NUMBER_OF_BOOKS_FOR_CHIDREN = 6;
+    private static final int NUMBER_OF_BOOKS_FOR_CHILDREN = 6;
     private static final int NUMBER_OF_BOOKS_FOR_29_99 = 5;
     private static BookStore bookStore;
 
@@ -36,7 +36,7 @@ public class BookStoreTest {
         Book longLostBook = Book.builder()
                 .title("Long Lost")
                 .author("Harlan Coben")
-                .yearPushlished(2009)
+                .yearPublished(2009)
                 .numberOfPages(195)
                 .price(44.99)
                 .genre(Genre.CRIME_STORY)
@@ -69,7 +69,7 @@ public class BookStoreTest {
         //then
         Assert.assertEquals(NUMBER_OF_BOOKS_FROM_1999, booksByYear.size());
         Assert.assertTrue(booksByYear.stream()
-                .allMatch((book -> book.getYearPushlished() == year)));
+                .allMatch((book -> book.getYearPublished() == year)));
     }
 
     @Test

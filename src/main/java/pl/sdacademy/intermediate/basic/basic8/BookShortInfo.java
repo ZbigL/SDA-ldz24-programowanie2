@@ -12,5 +12,5 @@ class BookShortInfo {
 
     private String title;
     private String author;
-    private int yearPushlished;
+    private int yearPublished;
 }

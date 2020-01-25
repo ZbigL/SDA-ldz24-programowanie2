@@ -21,7 +21,7 @@ class Basic8FilesAndStreams {
 
         double totalCostOfSomeFantasyBooks = bookStore.findBooksByGenre(Genre.FANTASY)
                 .stream()
-                .filter(book -> book.getYearPushlished() >= 1990 && book.getYearPushlished() <= 1999)
+                .filter(book -> book.getYearPublished() >= 1990 && book.getYearPublished() <= 1999)
                 .filter(book -> BigDecimal.valueOf(book.getPrice()).compareTo(BigDecimal.valueOf(40.0)) > 0)
                 .mapToDouble(Book::getPrice)        // method reference - used when calling only 1 method for all elements
                 // equivalent of lambda: book -> book.getPrice()
@@ -37,7 +37,7 @@ class Basic8FilesAndStreams {
                 .map(book -> BookShortInfo.builder()
                         .title(book.getTitle())
                         .author(book.getAuthor())
-                        .yearPushlished(book.getYearPushlished())
+                        .yearPublished(book.getYearPublished())
                         .build())
                 .collect(Collectors.toList());
 
