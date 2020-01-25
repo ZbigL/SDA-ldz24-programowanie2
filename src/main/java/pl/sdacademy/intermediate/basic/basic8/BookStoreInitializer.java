@@ -6,32 +6,41 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class BookStoreInitializer {
+/**
+ * @author Piotr Zietek
+ */
+class BookStoreInitializer {
 
-    List<Book> initBookStore() throws FileNotFoundException {
-        File file = new File("books.txt");
-        Scanner in = new Scanner(file);
+    List<Book> initBookStore() {
         List<Book> books = new ArrayList<>();
-        while (in.hasNextLine()) {
-            String bookLine = in.nextLine();
-            String[] splitBookline = bookLine.split("\\|");
-            String title = splitBookline[0];
-            String author = splitBookline[1];
-            int yearPublished = Integer.parseInt(splitBookline[2]);
-            int numberOfPages = Integer.parseInt(splitBookline[3]);
-            double price = Double.parseDouble(splitBookline[4]);
-            Genre genre = Genre.valueOf(splitBookline[5]);
-            Book book = Book.builder()
-                    .title(title)
-                    .author(author)
-                    .yearPublished(yearPublished)
-                    .numberOfPages(numberOfPages)
-                    .price(price)
-                    .genre(genre)
-                    .build();
-            books.add(book);
-            System.out.println(bookLine);
+        String booksFilePathFromResources = getClass().getClassLoader().getResource("books.txt").getFile();
+        File booksFile = new File(booksFilePathFromResources);
+        try {
+            Scanner scanner = new Scanner(booksFile);
+            while (scanner.hasNext()) {
+                String bookLine = scanner.nextLine();
+                String[] bookLineSplit = bookLine.split("\\|");
+                String title = bookLineSplit[0];
+                String author = bookLineSplit[1];
+                int yearPublished = Integer.valueOf(bookLineSplit[2]);
+                int numberOfPages = Integer.valueOf(bookLineSplit[3]);
+                double price = Double.valueOf(bookLineSplit[4]);
+                Genre genre = Genre.valueOf(bookLineSplit[5]);
+                Book book = Book.builder()
+                        .title(title)
+                        .author(author)
+                        .yearPushlished(yearPublished)
+                        .numberOfPages(numberOfPages)
+                        .price(price)
+                        .genre(genre)
+                        .build();
+                System.out.println(book);
+                books.add(book);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
         return books;
     }
+
 }
